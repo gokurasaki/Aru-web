@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="235" height="45" viewBox="0 0 235 45">
+  <defs>
+    <clipPath id="clip-footer-logo">
+      <rect width="235" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="footer-logo" clip-path="url(#clip-footer-logo)">
+    <g id="Group_51" data-name="Group 51" transform="translate(-466.588 -1250)">
+      <text id="ARU_DECO" data-name="ARU
+DECO" transform="translate(584 1268)" fill="#fff" font-size="19" font-family="FelixTitlingMT, Felix Titling" letter-spacing="0.5em"><tspan x="-30.685" y="0">ARU</tspan><tspan font-size="16" letter-spacing="0.2em"><tspan x="-28.562" y="23">DECO</tspan></tspan></text>
+      <g id="Group_45" data-name="Group 45" transform="translate(636.588 1271.257)">
+        <g id="Group_44" data-name="Group 44" transform="translate(0 0)">
+          <path id="Path_119" data-name="Path 119" d="M583.725,53.617l-5.154,4.621c-1.135,1.017-4.83,1.017-5.963,0l-2.174-1.947c-1.133-1.017-4.828-1.017-5.962,0L562.3,58.238c-1.133,1.017-4.83,1.017-5.963,0l-2.174-1.947c-1.132-1.017-4.828-1.017-5.96,0l-2.174,1.947c-1.133,1.017-4.83,1.017-5.963,0L537.9,56.291c-1.134-1.017-4.83-1.017-5.962,0l-2.174,1.947c-1.133,1.017-4.828,1.017-5.963,0l-5.154-4.621" transform="translate(-518.644 -53.617)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.45"/>
+          <path id="Path_120" data-name="Path 120" d="M518.644,59.99l5.154-4.623c1.135-1.015,4.83-1.015,5.963,0l2.174,1.949c1.133,1.017,4.828,1.017,5.962,0l2.172-1.949c1.133-1.015,4.83-1.015,5.963,0l2.174,1.949c1.132,1.017,4.828,1.017,5.96,0l2.174-1.949c1.133-1.015,4.828-1.015,5.963,0l2.172,1.949c1.134,1.017,4.83,1.017,5.962,0l2.174-1.949c1.133-1.015,4.828-1.015,5.963,0l5.154,4.623" transform="translate(-518.644 -52.642)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.45"/>
+        </g>
+      </g>
+      <g id="Group_49" data-name="Group 49" transform="translate(466.588 1271.257)">
+        <g id="Group_44-2" data-name="Group 44" transform="translate(0 0)">
+          <path id="Path_119-2" data-name="Path 119" d="M583.725,53.617l-5.154,4.621c-1.135,1.017-4.83,1.017-5.963,0l-2.174-1.947c-1.133-1.017-4.828-1.017-5.962,0L562.3,58.238c-1.133,1.017-4.83,1.017-5.963,0l-2.174-1.947c-1.132-1.017-4.828-1.017-5.96,0l-2.174,1.947c-1.133,1.017-4.83,1.017-5.963,0L537.9,56.291c-1.134-1.017-4.83-1.017-5.962,0l-2.174,1.947c-1.133,1.017-4.828,1.017-5.963,0l-5.154-4.621" transform="translate(-518.644 -53.617)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.45"/>
+          <path id="Path_120-2" data-name="Path 120" d="M518.644,59.99l5.154-4.623c1.135-1.015,4.83-1.015,5.963,0l2.174,1.949c1.133,1.017,4.828,1.017,5.962,0l2.172-1.949c1.133-1.015,4.83-1.015,5.963,0l2.174,1.949c1.132,1.017,4.828,1.017,5.96,0l2.174-1.949c1.133-1.015,4.828-1.015,5.963,0l2.172,1.949c1.134,1.017,4.83,1.017,5.962,0l2.174-1.949c1.133-1.015,4.828-1.015,5.963,0l5.154,4.623" transform="translate(-518.644 -52.642)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.45"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
