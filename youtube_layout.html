@@ -23,6 +23,18 @@
             margin: 0;
         }
 
+        header.header button.btn_hamburger, .aside.aside button.btn_hamburger{
+            display: none;
+        } 
+
+        @media screen and (max-width: 767px) {
+            header.header button.btn_hamburger, .aside.aside button.btn_hamburger{
+                display: inline-block;
+            }
+
+            
+        }
+
         header.header{
             border: 1px solid red;
             position: sticky;
@@ -44,9 +56,17 @@
             padding: 20px 0;
         }
 
-        aside.aside nav.nav{
-
+        @media screen and (max-width: 767px){
+            aside.aside{
+                top: 0;
+                height: 100%;
+                transform: translateX(-100%);
+            }
+            aside.aside.-on{
+                transform: translateX(0%);
+            }
         }
+
 
         aside.aside nav.nav ul.nav_list{
             border: 1px solid green;
@@ -76,6 +96,17 @@
             /* 影片會無限延伸超出範圍，設定最小高度 */
             background-color: hsl(34,100%, 84%);
             padding: 20px;
+
+            /* 切換視窗大小轉場 */
+            transition:  all 1s;
+        }
+
+        @media screen and (max-width: 767px) {
+            main.main{
+                margin-left: 0;
+                width: 100%;
+            }
+            
         }
 
         main.main ul.item_list{
@@ -94,9 +125,21 @@
             margin-bottom: 20px;
         }
 
+        @media screen and (max-width: 767px){
+            main.main ul.item_list > li{
+                width: calc((100% - 20px)/2);
+            }
+        }
+
         main.main ul.item_list > li:nth-child(4n){
             margin-right: 0;
             /* 第四個li右距不為20，這樣才不會順勢排列下去 */
+        }
+
+        @media screen and (max-width: 767px){
+            main.main ul.item_list > li:nth-child(2n){
+                margin-right: 0;
+            }
         }
 
         main.main ul.item_list > li > a{
@@ -130,17 +173,15 @@
         }
 
 
-
-
-
     </style>
 </head>
 <body>
     <header class="header">
-        header
+        <button type="button" class="btn_hamburger">按鈕</button>
     </header>
 
     <aside class="aside">
+        <button type="button" class="btn_hamburger">按鈕</button>
         <nav class="nav">
             <ul class="nav_list">
                 <li><a href="#">連結一</a></li>
@@ -256,6 +297,15 @@
         </ul>
     </main>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("button.btn_hamburger").on("click", function(){
+
+                $("aside.aside").toggleClass("-on");
+
+            });
+        });
+    </script>
 </body>
 </html>
