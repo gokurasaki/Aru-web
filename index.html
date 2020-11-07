@@ -2,134 +2,272 @@
 <html lang="zh-TW">
 <head>
 	<meta charset="UTF-8">
-	<title>有飾:Arudeco</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arudeco: 有飾 / 讓生活多一點裝飾</title>
 	<link rel="stylesheet" href="./css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- <script src="./js/index.js"></script> -->
 </head>
+
 <body>
 	<header class="header">
-		<div class="parent_block">
-		  	<nav class="nav_left">
-		        <ul class="nav_list1">
-		          <li><a href="./index.html">品牌故事</a></li>
-		          <li><a href="#">精選飾品</a></li>
-				  <li><a href="./news.html">最新消息</a></li>
-		          <li><a href="./workshop.html">工作坊</a></li>  
-		        </ul>
-		    </nav>
+		<nav class="nav_list">
+			<a href="#" class="showmenu">menu</a>
 
-		    <div class="nav2">
-		    	<a class="online_shop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589" target="_blank">線上商店</a>
+			<ul class="nav_left">
+				<li>
+					<a class="news" href="./html/news.html">最新消息</a>
+				</li>
 
-		    	<a href="https://www.instagram.com/aru_deco/?hl=zh-tw" target="_blank" class="ig_logo"><img src="./img/ig_logo.svg"></a>
-		    </div>
-		</div>
+				<li>
+
+					<div class="jewelry_list">
+						<a href="./html/jewelry.html">精選飾品</a>
+						<ul class="jewelry_list_option">
+							<li><a href="./html/drop_earrings.html">垂墜系列</a></li>
+							<hr>
+							<li><a href="./html/earrings.html">貼耳系列</a></li>
+							<hr>
+							<li><a href="/html/pierce.html">夾式耳環</a></li>	
+						</ul>
+					</div>
+				</li>
+
+				<li>
+					<a class="workshop" href="./html/workshop.html">工作坊</a>
+				</li>
+
+				<li>
+					<a class="brandstory" href="./html/brandstory.html">品牌故事</a>
+				</li>
+			</ul>
+
+			<ul class="menu">
+				<li><a href="./html/news.html">最新消息</a></li>
+				<li><a href="./html/jewelry.html">精選飾品</a></li>
+				<li><a href="./html/workshop.html">工作坊</a></li>
+				<li><a href="./html/brandstory.html">品牌故事</a></li>
+				<li><a href="./html/aboutus.html">關於我們</a></li>
+				<li class="menu_onlineshop"><a class="menu_onlineshop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
+			</ul>
+
+			<ul class="nav_right">
+				<li><a class="about_us" href="./html/aboutus.html">關於我們</a></li>
+				<li><a class="online_shop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
+				<li><a class="header_ig_logo" href="https://www.instagram.com/aru_deco/?hl=zh-tw"><img src="./img/ig_logo.svg" alt=""></a></li>
+			</ul>
+
+		</nav>
 
 	</header>
 
-	<a href="./index.html" class="logo_img"><img src="./img/logo.svg"></a>
+	<a class="index_logo" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+
+	<a class="messenger" href="https://m.me/ARUDECO" target="_blank"><img src="./img/messenger_icon.svg"/></a>
+	
+	<main>
+		<section class="brand_descript">
+			<h2>ARUDECO STUDIO</h2>
+			<h5>用自然的花草，為生活增添一點裝飾</h5>
+			<hr>
+			<p>以恣意的花草型態，打造你的專屬飾品<br>採用日本Dip造花液、Padico UV膠原料創作<br>將季節之花形帶入飾品，融入妳的生活之中。</p>
+			<img src="./img/index_img.jpg" alt="">
+		</section class="news_block">
 
 
-	<main class="container">
+		<section class="news_block">
+			<div class="title_block">
+				<img src="./img/titleimg.svg" alt="">
+				<h2>NEWS</h2>
+				<img src="./img/titleimg.svg" alt="">
+			</div>
+			<h3>最新消息</h3>
+			<div class="news_block_descipt">
+				<div class="text_block">
+					<a href="">
+						<p class="event">2020.10.10&emsp;小蝸牛市集 IN 台中審計新村</p>
+						<p class="description">数量限定で販売を開始した「和栗のカレ・オ・ショコラ」についてご紹介します。</p><a href=""></a>
+					</a>
+				</div>
+				<a href="">
+					<img src="./img/arrow.svg" alt="">
+				</a>
+			</div>
+			<div class="news_block_descipt">
+				<div class="text_block">
+					<a href="">
+						<p class="event">2020.06.06&emsp;邊緣人市集 IN 寶藏巖國際藝術村</p>
+						<p class="description">数量限定で販売を開始した「和栗のカレ・オ・ショコラ」についてご紹介します。</p><a href=""></a>
+					</a>
+				</div>
+				<a href="">
+					<img src="./img/arrow.svg" alt="">
+				</a>
+			</div>
+
+			<div class="swiper-wrapper">
+				<div class="card">
+					<a href="">
+						<div class="card_img">
+							<img src="./img/swiper-wrapper-1@2x.jpg" alt="">
+						</div>
+						<p class="card_title">有飾初登場 in 四四南村</p>
+						<p class="date">2020.06.06</p>
+					</a>
+				</div>
+				
+				<div class="card">
+					<a href="">
+						<div class="card_img">
+							<img src="./img/swiper-wrapper-2@2x.jpg" alt="">
+						</div>
+						<p class="card_title">宜蘭高商教學首次亮相</p>
+						<p class="date">2020.05.20</p>
+					</a>
+				</div>
+				
+				<div class="card">
+         			<a href="">
+						<div class="card_img">
+							<img src="./img/swiper-wrapper-3@2x.jpg" alt="">
+						</div>
+						<p class="card_title">邊緣人 in 寶藏巖國際藝術村</p>
+						<p class="date">2020.08.26</p>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="">     
+						<div class="card_img">
+							<img src="./img/swiper-wrapper-4@2x.jpg" alt="">
+						</div>
+						<p class="card_title">小蝸牛市集 in 審計新村</p>
+						<p class="date">2020.10.10</p>
+					</a> 
+				</div>
+
+			</div>
+
+			<div class="viewmore">
+				<a  href="">View&nbsp;more</a>
+				<img src="./img/arrow – 2.svg" alt="">
+			</div>
+		</section>
+
+		<section class="product_block">
+			<div class="title_block">
+				<img src="./img/titleimg.svg" alt="">
+				<h2>PRODUCT</h2>
+				<img src="./img/titleimg.svg" alt="">
+			</div>
+			<h3>精選飾品</h3>
+			<div class="product_storyblock">
+				<div class="product_storyblock_textblock">
+					<h3>用自然的花草<br>為生活增添一點裝飾</h3>
+					<p>以四季及日常之花草為單位型，讓你的生活增添點自然的清新，除了個人飾品選購，另提供送禮精緻服務，讓你一同與友人們分享感受自然花草的喜悅。</p>
+					<div class="viewmore">
+						<a  href="">View&nbsp;more</a>
+						<img src="./img/arrow – 2.svg" alt="">
+					</div>
+				</div>
+				<img src="./img/product.gif" alt="">
+			</div>
+
+			<div class="product_descript_block">
+				<img src="./img/product2.gif" alt="">
+				<div class="product_descript_textblock">
+					<h3>以工藝的直覺經營生活</h5>
+					<p>採用無毒電子廢棄物、無電鍍材質，以手工銲接、鍛造、磨銼、拋光的方式，竭力呈現大自然金屬初始原色，讓飾品是貫穿生活的精神宣言。</p>
+				</div>
+			</div>
+
+			<div class="product_itemblock">
+				<div class="product_card">
+					<a href="">     
+						<div class="card_img">
+							<img src="./img/product_item-1@2x.jpg" alt="">
+						</div>
+
+						<div class="product_card_description">
+							<p class="card_title">莫蘭迪綠《白洋球花》</p>
+							<p class="date">NT$ 780</p>
+							<p class="buy_it" href="">馬上選購</p>
+						</div>
+
+					</a> 
+				</div>
+
+				<div class="product_card">
+					<a href="">     
+						<div class="card_img">
+							<img src="./img/product_item – 2@2x.jpg" alt="">
+						</div>
+
+						<div class="product_card_description">
+							<p class="card_title">紫藤《夏日圈圈仙女》</p>
+							<p class="date">NT$ 780</p>
+							<p class="buy_it" href="">馬上選購</p>
+						</div>
+
+					</a> 
+				</div>
+
+				<div class="product_card">
+					<a href="">     
+						<div class="card_img">
+							<img src="./img/product_item – 3@2x.jpg" alt="">
+						</div>
+
+						<div class="product_card_description">
+							<p class="card_title">珍珠白《三色堇》</p>
+							<p class="date">NT$ 780</p>
+							<p class="buy_it" href="">馬上選購</p>
+						</div>
+					</a> 
+				</div>
+
+			</div>
+
+			<div class="viewmore">
+				<a  href="">View&nbsp;more</a>
+				<img src="./img/arrow – 2.svg" alt="">
+			</div>	
+
+		</section>
+		<section class="workshop_block">
+			<div class="title_block">
+				<img src="./img/titleimg.svg" alt="">
+				<h2>workshop</h2>
+				<img src="./img/titleimg.svg" alt="">
+			</div>
+			<h3>工作坊</h3>
+
+			<div class="workshop_storyblock">
+				<img src="./img/index_workshop.gif" alt="">
+				<div class="workshop_storyblock_textblock">
+					<h3>有飾工作坊<br>樹脂飾品製作</h3>
+					<p>彎曲纏繞的金屬線拉出了「線條」，透明多色的樹脂在線條間勾勒出迷人多彩的「面」，再佐以異材質所形成的「點」，建構出精彩美麗的氣質佳作！</p>
+					<div class="viewmore">
+						<a  href="">View&nbsp;more</a>
+						<img src="./img/arrow – 2.svg" alt="">
+					</div>
+				</div>
+			</div>
 
 
-		<div class="brandstory">
-			<p class="title1">Aru deco studio</p>
-			<p class="slogan">用自然的花草，為生活增添一點裝飾</p>
-			<hr class="btmline">
-			<p class="descript">以恣意的花草型態，打造你的專屬飾品<br>採用日本Dip造花液、Padico UV膠原料創作，並將季節之花形帶入飾品型態之中<br>
-			將清新的花草氛圍融入你/妳的生活之中。</p>
-		</div>
-
-		<div class="index_img_block">
-	    	 <img src="./img/index_img.jpg">
-	    </div>
-
-
-	    <div class="Product">
-	        <p class="title2">Product</p>
-
-	        <div class="Product_container">
-
-		        <a href="#" class="Product_img"><img src="./img/Product_img.jpg"></a>
-		        
-		        <div class="title2_descript">
-
-		        	<div class="title2_descript-1">
-			        	<p >精選飾品</p>
-			            <img src="./img/titleimg.svg" alt="">
-			        </div>
-
-		        	<p class="title2_descript-2">以四季及日常之花草為單位型，讓你的生活增添點自然的清新，除了個人飾品選購，另提供送禮精緻服務，讓你一同與友人們分享感受自然花草的喜悅。</p>
-		        	<span class="btn">進入看更多</span>
-		        </div>
-
-		    </div>
-
-		</div>
-
-        <div class="NEWS">
-	    	<p class="title3">NEWS</p>
-	    	<div class="market_info">
-	    		<p class="market_info-1">2020.10.10 ｜ 小蝸牛市集</p>
-	    		<p class="market_info-2">《台中審計新村  13:00-20:00》</p>
-	    	</div>
-	    	<div class="card_content">
-
-		    	<div class="card_img1">
-		    		<a href="#">
-		    			<img src="./img/card_img1.jpg">
-		    		</a>
-		    		<p>2020.05.20<br>宜蘭高商飾品教學</p>
-		    	</div>
-
-		    	<div class="card_img1">
-		    		<a href="#">
-		    			<img src="./img/card_img2.jpg">
-		    		</a>
-		    		<p>2020.06.06<br>四四南村首次亮相</p>
-		    	</div>
-
-		    	<div class="card_img1">
-		    		<a href="#">
-		    			<img src="./img/card_img3.jpg">
-		    		</a>
-		    		<p>2020.08.16<br>寶藏巖藝術村</p>
-		    	</div>
-
-		    </div>
-	    </div>
-
-	    <div class="Workshop">
-	        <p class="title4">Workshop</p>
-
-	        <div class="Workshop_container">
-
-		        <div class="title2_descript">
-
-		        	<div class="title2_descript-1">
-			        	<p >有飾工作坊</p>
-			            <img src="./img/titleimg.svg" alt="">
-			        </div>
-
-		        	<p class="title2_descript-2">以四季及日常之花草為單位型，讓你的生活增添點自然的清新，除了個人飾品選購，另提供送禮精緻服務，讓你一同與友人們分享感受自然花草的喜悅。</p>
-		        	<span class="btn">馬上報名</span>
-		        </div>
-
-		        <a href="#" class="Workshop_img"><img src="./img/Workshop_img.jpg"></a>
-
-		    </div>
-
-		</div>	 
-
-
-
-
+		</section>
 	</main>
+    
 	<footer class="footer">
 		<div class="footer_item">
+
 			<p class="cc">© Arudeco Inc. All Rights Reserved.</p>
+
 			<img class="footer_logo" src="./img/footer_logo.svg" alt="">
+
 			<div class="follow_us">
+
 				<p>follow us</p>
 	    		<a href="https://www.facebook.com/ARUDECO" target="_blank" class="fb_logo"><img src="./img/facebook.svg"></a>
 	    		<a href="https://www.instagram.com/aru_deco/?hl=zh-tw" target="_blank" class="ig_logo"><img src="./img/ig_logo_footer.svg"></a>
@@ -137,11 +275,16 @@
 			</div>
 
 
-		</div>
-
-		
 	</footer>
 
-	<script src="./js/index.js"></script>	
+	<script>
+        $(document).ready(function() {
+            $('.showmenu').on('click',  function(e){
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
+        });
+    </script>
+	
 </body>
 </html>

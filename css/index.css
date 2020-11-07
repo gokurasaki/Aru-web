@@ -1,544 +1,753 @@
-
- @import "./header.css";
- @import "./footer.css";
-
- /*網頁內容開始*/
+@import "./header.css";
+@import "./footer.css";
 
 *{
-	/* border: 1px solid red; */
-}*/
-
-
-
-main.container{
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
+main{
+    width: 100%;
+    /* border: 1px solid blue; */
+    text-align: center;
 
-/*Arudeco標題---------------------*/
-
-.brandstory{
-	width: calc(100% - 160px);
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
-
-.title1{
-	margin-top: 150px;
-	font-family: Felix Titling;
-	color: #956134;
-	font-size: 4rem;
-	letter-spacing: 12px;
-	display: block;
-	text-align: center;
-}
-
-.slogan{
-	padding:  30px 5px;
-    font-family: Noto Sans TC;
-    letter-spacing: 8px;
+section.brand_descript{
+    /* border: 1px solid red; */
+    width: calc(100%-160px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
     color: #956134;
+}
+
+section.brand_descript h2{
+    margin-top: 25px;
+    font-size: 78px;
+    letter-spacing: 12px;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: initial;
+    text-align: center;
+}
+
+section.brand_descript > img{
+    /* border: 1px solid blue; */
+    width: calc(100%-160px);
+    max-width: 100%;
+}
+
+section.brand_descript h5{
+    padding: 30px 5px;
+    letter-spacing: 8px;
+    font-size: 17px;
     font-weight: bold;
 }
 
-.btmline{
-	display: inline-block;
-	width: 100px;
-	color: #956134;
+section.brand_descript hr{
+    width: 100px;
 }
 
-.descript{
-	margin-top: 40px;
-	color: #956134;
-	line-height: 2rem;
-	font-size: 14px;
-    letter-spacing: 4px;
-	padding-bottom: 40px;
-	text-align: center;
-}
-
-
-
-/*首頁輪播圖區域-----------------------------------------------*/
-.index_img_block{
-	text-align: center;
-	width: calc(100% - 160px);
-	margin: 0 auto;
-
-}
-/*首頁輪播圖尺寸*/
-.index_img_block img{
-	max-width: 100%;
-}
-
-
-/*精選飾品區域--------------------------------------------------*/
-.Product{
-	position: relative;
-	margin: 0 auto;
-	margin-top: 60px;
- 	width: calc(100% - 160px);
-}
-
-/*Product標題-------------------*/
-.title2{
-    display: block;
-	top:  0px;
-	left:0;
-	font-family: Felix Titling;
-	color: #956134;
-	font-size: 56px;
-	letter-spacing: 12px;
-	margin-bottom: 60px;
-	text-align: center;
-}
-
-/*Product圖文區域---------------*/
-.Product_container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-/*精選飾品圖片區域-------*/
-.Product_img{
-    width: 60%;
-}
-
-.Product_img img{
-	width: 100%;
-}
-
-
-
-
-/*精選飾品文字區域--------*/
-.title2_descript{
-	width: 35%;
-	height: 60%;
-    text-align: left;
-	color: #956134;
-
-}
-
-/*精選飾品標題-----*/
-
-.title2_descript-1{
-	position: relative;
-    display: inline-block;
-}
-
-
-.title2_descript-1 p{
-	display: inline-block;
-    font-size: 28px; 
-	font-family: baskerville-display-pt,YuMincho,Yu Mincho;
-	font-weight: bold;
-	letter-spacing: 15px;
-}
-
-/*標題裝飾線------*/
-.title2_descript-1 img{
-	display: inline-block;
-
-}
-
-/*精選飾品描述----*/
-.title2_descript-2{
-	position: relative;
-    display: inline-block;
-    font-size: 16px; 
-    letter-spacing: 7px;
-    margin-top: 20px;
+section.brand_descript p{
+    text-align: center;
+    margin-top: 40px;
     line-height: 2rem;
+    font-size: 14px;
+    letter-spacing: 6px;
+    padding-bottom: 40px;
 }
 
-/*按鈕*/
-span.btn{
-	display: inline-block;
-	background-color: #956134;
-	color: white; 
-	border-radius: 24px;
-	font-size: 16px;
-	padding: 10px 60px;
-	letter-spacing: 8px;
-    cursor: pointer;
+/* 最新消息區 -------------------------------------------*/
+section.news_block{
+    /* border: 2px solid red; */
+    margin-top: 100px;
+    color: #956134;
+}
+
+.title_block{
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: center;
+    color: #956134;
+    
+}
+
+.title_block h2{
+    font-size: 64px;
+    letter-spacing: 8px;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: initial;
+    margin: 0 25px 0;
+}
+
+.title_block img{
+    margin: 0px;
+}
+/* 消息事件區域------------ */
+section.news_block h3{
+    font-size: 21px;
+    letter-spacing: 14px;
+    margin: 5px 0 25px;
+}
+
+section.news_block div.news_block_descipt{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+section.news_block div.news_block_descipt:hover{
+    opacity: 0.75;
+    padding-left: 20px;
+}
+
+section.news_block div.news_block_descipt a{
+    text-decoration: none;
+    color: #956134;
+    line-height: 28px;
+}
+
+section.news_block div.news_block_descipt a img{
+    margin-left: 20px;
+}
+/* 消息事件區域--文字 */
+section.news_block div.news_block_descipt .text_block{
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+}
+
+section.news_block div.news_block_descipt .text_block:hover{
+    border-bottom: 1px solid #956134;
+    /* transition: all 1s ease-in-out; */
+}
+
+section.news_block div.news_block_descipt .text_block a > p.event{
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 6px;
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+section.news_block div.news_block_descipt .text_block a > p.description{
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+/* 最新消息卡片區域 */
+section.news_block .swiper-wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.swiper-wrapper .card{
+    /* border: 1px solid blue; */
+    width: 300px;
+    margin: 15px 0;
+    margin-right: 15px;
+}
+
+.swiper-wrapper .card:nth-child(4n){
+    margin-right: 0px;
+}
+
+.swiper-wrapper .card a{
+    text-decoration: none;
+    color: #956134;
+}
+
+.swiper-wrapper .card .card_img{
+    /* border: 1px solid blue; */
+    overflow: hidden;
+} 
+
+.swiper-wrapper .card .card_img img{
+    overflow: hidden;
+    max-width: 100%;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
+}
+
+.swiper-wrapper .card .card_img img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.swiper-wrapper .card p.card_title{
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 0 0;
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.swiper-wrapper .card p.date{
+    letter-spacing: 3px;
+    padding: 5px;
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.viewmore {
+    border-bottom: 1px solid #956134;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.viewmore:hover{
+    opacity: 0.8;
+}
+
+.viewmore a {
+    text-decoration: none;
+    color: #956134;
+    font-family: 微軟正黑體;
+    font-size: 21px;
+    margin: 0;
+}
+
+.viewmore img{
+    margin: 0;
+    margin-left: 20px;
+}
+
+
+/* 精選飾品區域--------------------------------------------------- */
+section.product_block{
+    /* border: 2px solid red; */
+    margin-top: 100px;
+    color: #956134;
+}
+
+section.product_block h3{
+    /* border: 2px solid red; */
+    font-size: 21px;
+    letter-spacing: 14px;
+    margin: 5px 0 50px;
+}
+
+div.product_storyblock{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 80px;
+}
+
+div.product_storyblock_textblock{
+    /* border: 2px solid purple; */
+    margin: 0;
+    padding: 50px 50px 50px 80px;
+    text-align: left;
+}
+
+div.product_storyblock_textblock h3{
+    font-size: 28px;
+    letter-spacing: 16px;
+    line-height: 3rem;
+    margin: 0;
+}
+
+div.product_storyblock_textblock > a{
+    text-decoration: none;
+    border: 1px solid #956134;
+    font-size: 14px;
+}
+
+div.product_storyblock img{
+    width: 60%;
+    margin: 0;
+}
+
+
+div.product_storyblock_textblock p{
+    margin: 40px 0px 40px;
+    line-height: 2rem;
+
+    /* 文字超出範圍 */
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; */
+    
+}
+
+div.product_storyblock_textblock div.viewmore{
+    margin: 0;
+} 
+
+div.product_storyblock_textblock div.viewmore a{ 
+    margin-right: 20px; 
+}
+
+/* 飾品製作描述區 -----------------------------------------*/
+
+section.product_block .product_descript_block{
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+section.product_block .product_descript_block img{
+    max-width: 100%;
+    margin: 0;
+    margin-right: 50px;
+}
+
+section.product_block .product_descript_textblock{
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 30%;
+    margin: 0;
+}
+
+section.product_block .product_descript_textblock h3{
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+section.product_block .product_descript_textblock p{
+    line-height: 2rem;
     margin-top: 20px;
 }
 
 
-/*最新消息區域------------------------------*/
-
-.NEWS{
-	position: relative;
-	margin: 0 auto;
-	margin-top: 80px;
-	width: calc(100% - 160px);
-	text-align: center;
+/* 精選飾品卡片區--------------------------------- */
+section.product_block .product_itemblock{
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
 }
 
-.title3{
-	position: relative;
-    display: block;
-	top:  0px;
-	left:0;
-	font-family: Felix Titling;
-	color: #956134;
-	font-size: 56px;
-	letter-spacing: 12px;
+.product_itemblock .product_card{
+    /* border: 1px solid blue; */
+    width: 360px;
+    margin: 15px 0;
+    margin-right: 50px;
+}
+.product_itemblock .product_card:last-child{
+    margin-right: 0;
 }
 
-
-
-.market_info-1{
-	color: #956134;
-	font-family: baskerville-display-pt,YuMincho,Yu Mincho;
-	font-size: 2rem;
-	font-weight: bold;
-	letter-spacing: 8px;
-	margin-top: 50px;
-	margin-bottom: 10px;
-
+.product_itemblock .product_card:nth-child(4n){
+    margin-right: 0px;
 }
 
-.market_info-2{
-	color: #956134;	
-	font-size: 18px;
-	font-family: 微軟正黑體;
-	letter-spacing: 12px;
+.product_itemblock .product_card a{
+    text-decoration: none;
+    color: #956134;
 }
 
-
-/*卡片區域-----------------------------*/
-
-.card_content{
-	display: flex;
-	margin-top: 50px;
-	justify-content: space-between;
-}
-
-/*卡片區塊*/
-.card_img1{
-    display: inline-block;
-    width: 32%;
-    border-radius: 10px;
+.product_itemblock .product_card .card_img{
     overflow: hidden;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/*卡片圖片尺寸*/
-.card_img1 img{
-	width: 100%;
+.product_itemblock .product_card a img{
+    overflow: hidden;
+    max-width: 100%;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
 }
 
-/*卡片圖片敘述*/
-.card_img1 p{
+.product_itemblock .product_card a img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
 
-	color: #956134;
-	font-family: baskerville-display-pt,YuMincho,Yu Mincho;
-	font-size: 16px;
-	font-weight: bold;
-	letter-spacing: 5px;
-	padding: 10px;
+.product_card_description{
+    text-align: left;
+}
+
+.product_card_description  > p.card_title{
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 0 0;
+    margin-top: 20px;
 }
 
 
-/*工作坊區域------------------------------------------------*/
-.Workshop{
-	position: relative;
-	margin: 0 auto;
-	margin-top: 100px;
-	width: calc(100% - 160px);
-	text-align: center;
+
+.product_card_description > p.date{
+    letter-spacing: 1px;
+    padding: 5px;
 }
 
-/*Workshop標題-------------------*/
-.title4{
-    display: block;
-	top:  0px;
-	left:0;
-	font-family: Felix Titling;
-	color: #956134;
-	letter-spacing: 12px;
-	margin-bottom: 60px;
-	font-size: 56px;
+.product_card_description > p.buy_it{
+    color: white;
+    font-weight: 8px;
+    letter-spacing: 3px;
+    padding: 20px 32px;
+    background-color: #AE8663;
+    margin-top: 20px;
+    text-align: center;
 }
 
-/*Workshop圖文區域---------------*/
-.Workshop_container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+.product_card_description > p.buy_it:hover{
+    opacity: 0.8;
 }
 
-/*Workshop圖片區域-------*/
-.Workshop_img{
+
+
+/* 工作坊區 -------------------------------------------*/
+section.workshop_block{
+    margin-top: 100px;
+    color: #956134;
+}
+
+
+section.workshop_block h3{
+    font-size: 21px;
+    letter-spacing: 14px;
+    margin: 5px 0 25px;
+}
+
+
+div.workshop_storyblock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 80px;
+}
+
+div.workshop_storyblock img{
     width: 60%;
+    margin: 0;
 }
 
-.Workshop_img img{
-	width: 100%;
+
+div.workshop_storyblock_textblock{
+    margin: 0;
+    padding: 50px 50px 50px 80px;
+    text-align: left;
 }
+
+div.workshop_storyblock_textblock h3{
+    font-size: 28px;
+    letter-spacing: 16px;
+    line-height: 3rem;
+    margin: 0;
+}
+
+div.workshop_storyblock_textblock > a{
+    text-decoration: none;
+    border: 1px solid #956134;
+    font-size: 14px;
+}
+
+div.workshop_storyblock_textblock img{
+    width: 60%;
+    margin: 0;
+}
+
+
+div.workshop_storyblock_textblock p{
+    margin: 40px 0px 40px;
+    line-height: 2rem;
+
+    /* 文字超出範圍 */
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; */   
+}
+
+div.workshop_storyblock_textblock div.viewmore{
+    margin: 0;
+
+} 
+
+div.workshop_storyblock_textblock div.viewmore a{ 
+    margin-right: 20px; 
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1332px){
+    div.product_storyblock_textblock h3{
+        font-size: 26px;
+        letter-spacing: 12px;
+    }
+
+    section.product_block .product_descript_textblock{
+        width: 40%;
+    }
+
+    div.workshop_storyblock_textblock h3{
+        font-size: 26px;
+        letter-spacing: 12px;
+    }
+} 
 
 @media (min-width: 992px) and (max-width: 1199px){
 
-	
+    div.product_storyblock_textblock h3{
+        font-size: 22px;
+        letter-spacing: 6px;
+    }
 
+    section.news_block .swiper-wrapper{
+        /* border: 1px solid red; */
+        width: 80%;
+        flex-wrap: wrap;        
+    }
+
+    div.product_storyblock_textblock{
+        padding: 0 30px 0 50px;
+
+    }
+
+    div.product_storyblock_textblock p{
+        margin: 20px 0px 20px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    section.product_block .product_descript_textblock{
+        width: 40%;
+    }
+
+    section.product_block .product_descript_textblock p{
+        font-size: 14px;
+    }
+
+    section.product_block .product_itemblock{
+        width: 90%;
+    }
+
+    div.workshop_storyblock_textblock {
+        padding: 35px;
+    }
+
+    div.workshop_storyblock_textblock h3{
+        font-size: 22px;
+        letter-spacing: 6px;
+        line-height: 36px;
+    } 
+
+    div.workshop_storyblock_textblock p{
+        margin: 25px 0 25px 0;
+    }
 }
+
 
 
 @media (min-width: 768px) and (max-width: 991px){
-	.brandstory{
-		width: calc(100% - 60px);
-	}
 
+    section.product_block h3{
+        font-size: 20px;
+        letter-spacing: 4px;
+        line-height: 32px;
+        
+    }
 
-	.index_img_block ,.Workshop_img{
-		width: calc(100% - 60px);
-	}
+    section.news_block .swiper-wrapper{
+        /* border: 1px solid red; */
+        width: 85%;
+        flex-wrap: wrap;        
+    }
 
-	.Product ,.NEWS ,.Workshop{
-		 width: calc(100% - 60px);
-		 margin-top: 50px;
-	}
+    .swiper-wrapper .card .card_img img{
+        /* width: 200px; */
+    }
+    
+    div.product_storyblock_textblock{
+        padding: 0 30px 0 40px;
 
+    }
 
-	.Product_container ,.Workshop_container{
-		display: flex;
-		flex-direction: column;
-	}
+    div.product_storyblock_textblock p{
+        padding: 0;
+        margin: 15px 0px 15px;
+        line-height: 24px;
+        font-size: 13px;
+    }
 
-	.Product_img {
-		width: 100%;
-	}
+    section.product_block .product_descript_block{
+        width: 90%;
+    }
 
+    section.product_block .product_descript_block img{
+        margin-right: 40px;
+    }
 
-	
-	.title2_descript{
-		width: 100%;
-	}
+    section.product_block .product_descript_textblock{
+        width: 60%;
+    }
 
-	.title2_descript-2{
-		font-size: 14px; 
-		letter-spacing: 5px;
-	}
+    section.product_block .product_descript_textblock h3{
+        font-size: 18px;
+    }
 
+    section.product_block .product_descript_textblock p{
+        margin: 15px 0px 15px;
+        line-height: 24px;
+        font-size: 13px;
 
-	.Workshop_img{
-		margin-top: 30px;
-		width: 100%;
-	}
+    }
 
+    div.viewmore{
+        padding: 5px;
 
-	.market_info-1{
-		font-size: 30px;
-		letter-spacing: 8px;
-		margin-top: 20px;
-	}
-	
-	.market_info-2{
-		font-size: 21px;
-		letter-spacing: 8px;
-	}
+    }
 
-	.card_img1 p{
-		font-size: 18px;
-		letter-spacing: 3px;
-		padding: 5px;
-		text-align: center;
-	}
+    div.viewmore a{
+        font-size: 18px;
+    }
+
+    div.viewmore img{
+        width: 70%;
+    }
+
+    .product_card_description > p.buy_it {
+        color: white;
+        letter-spacing: 3px;
+        padding: 15px 28px;
+    }
+
+    div.workshop_storyblock_textblock {
+        padding: 35px;
+    }
+
+    div.workshop_storyblock_textblock h3{
+        font-size: 20px;
+        letter-spacing: 4px;
+        line-height: 32px;
+    } 
+
+    div.workshop_storyblock_textblock p{
+        padding: 0;
+        margin: 15px 0px 15px;
+        line-height: 24px;
+        font-size: 13px;
+    }
+    
+
 
 }
 
-@media (min-width: 576px) and (max-width: 767px){
-	.brandstory{
-		width: calc(100% - 20px);
-	}
 
-	.title1{
-		font-size: 42px;
-		letter-spacing: 8px;
-	}
+@media (max-width: 768px){
+    .title_block img{
+        display: none;
+    }
 
-	.slogan{
-		padding:  30px 5px;
-		letter-spacing: 6px;
-		font-size: 16px;
-	}
+    section.news_block div.news_block_descipt{
+        width: 85%;
+    }
 
-	.descript{
-		line-height: 28px;
-		font-size: 14px;
-		letter-spacing: 4px;
-		padding-bottom: 40px;
-	}
-	
-	.index_img_block ,.Workshop_img{
-		width: calc(100% - 20px);
-	}
+    section.news_block div.news_block_descipt .text_block a > p.event{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
 
-	.title2 ,.title3 ,.title4{
-		font-size: 42px;
-		text-align: center;
-		letter-spacing: 10px;
-		margin-bottom: 35px;	
-	}
+    section.news_block .swiper-wrapper{
+        flex-direction: column;
+    }
 
+    .swiper-wrapper .card{
+        width: 100%;
+    }
 
-	.Product ,.NEWS ,.Workshop{
-		 width: calc(100% - 20px);
-		 margin-top: 50px;
-	}
+    /* 精選飾品區//////////////////////////////////////// */
+    div.product_storyblock{
+        flex-direction: column-reverse;
+    }
 
+    div.product_storyblock img{
+        width: 100%;
+    }
 
-	.Product_container ,.Workshop_container{
-		display: flex;
-		flex-direction: column;
-	}
+    div.product_storyblock_textblock{
+        text-align: center;
+    }
 
-	.Product_img {
-		width: 100%;
-	}
+    div.product_storyblock_textblock p{
+        margin: 40px 15px 40px 15px;
+    }
 
+    div.product_storyblock_textblock h3{
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin-top: 50px;
+        line-height: 2rem;
+    }
 
-	.title2_descript-1 p{
-		font-size: 26px;
-	}
+    /* 飾品製作描述區 -----------------------------------------*/
 
-	.title2_descript{
-		width: 100%;
-	}
+    section.product_block .product_descript_block{
+        flex-direction: column;
+        margin: 0 auto;
+    }
 
-	.title2_descript-2{
-		font-size: 14px; 
-		letter-spacing: 5px;
-	}
+    
+    section.product_block .product_descript_textblock{
+        text-align: center;
+        width: 80%;
+        margin: 50px 0 50px 0;
+    }
 
+    /* 精選飾品卡片區--------------------------------- */
+    section.product_block .product_itemblock{
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: initial
+    }
 
-	.Workshop_img{
-		margin-top: 30px;
-		width: 100%;
-	}
+    .product_itemblock .product_card {
+        margin-right: initial;
+    }
 
+ 
 
-	.market_info-1{
-		font-size: 28px;
-		letter-spacing: 6px;
-		text-align: center;
-		margin-top: 0px;
-	}
-	
-	.market_info-2{
-		font-size: 18px;
-		letter-spacing: 8px;
-		text-align: center;
-	}
+    /* 工作坊區//////////////////////////////////////// */
+    div.workshop_storyblock{
+        flex-direction: column;
+    }
 
-	.card_img1 p{
-		font-size: 16px;
-		letter-spacing: 3px;
-		padding: 5px;
-		text-align: center;
-	}
-	
-}
+    div.workshop_storyblock img{
+        width: 100%;
+    }
 
-@media (max-width: 575px){
-	.brandstory{
-		width: calc(100% - 10px);
-	}
+    div.workshop_storyblock_textblock{
+        padding: 50px 20px 50px 20px;
+        text-align: center;
+    }
 
-	.title1{
-		font-size: 36px;
-		letter-spacing: 5px;
-	}
-
-	.slogan{
-		padding:  30px 5px;
-		letter-spacing: 6px;
-		font-size: 14px;
-	}
-
-	.index_img_block ,.Workshop_img{
-		width: calc(100% - 10px);
-	}
-
-	.title2 ,.title3 ,.title4{
-		font-size: 36px;
-		text-align: center;
-		letter-spacing: 8px;
-		margin-bottom: 25px;	
-	}
+    
 
 
-	.Product ,.NEWS ,.Workshop{
-		 width: calc(100% - 10px);
-		 margin-top: 50px;
-	}
 
 
-	.Product_container ,.Workshop_container{
-		display: flex;
-		flex-direction: column;
-	}
+ 
 
-	.Product_img {
-		width: 100%;
-	}
-
-
-	.title2_descript-1 p{
-		font-size: 24px;
-	}
-
-	.title2_descript{
-		width: 100%;
-	}
-
-	.title2_descript-2{
-		font-size: 14px; 
-		letter-spacing: 5px;
-	}
-
-	.descript{
-		line-height: 28px;
-		font-size: 12px;
-		letter-spacing: 4px;
-		padding-bottom: 40px;
-	}
-	
-	.Workshop_img{
-		margin-top: 30px;
-		width: 100%;
-	}
-
-
-	.market_info-1{
-		font-size: 24px;
-		letter-spacing: 6px;
-		text-align: center;
-		margin-top: 0px;
-	}
-	
-	.market_info-2{
-		font-size: 16px;
-		letter-spacing: 8px;
-		text-align: center;
-	}
-
-	.card_img1 p{
-		font-size: 13px;
-		letter-spacing: 3px;
-		padding: 5px;
-		text-align: center;
-	}
 }
 
 

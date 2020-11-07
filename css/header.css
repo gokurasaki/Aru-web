@@ -1,240 +1,379 @@
 *{
 	box-sizing: border-box;
+	/* margin: 0 auto; */
 	margin: 0;
 	padding: 0;
-/*	border: 1px solid orange;*/
 }
 
-
-
-header.header {
-	text-decoration: none;
-	font-size: 0px;
+/* 頁首 */
+header.header{
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
 	position: sticky;
 	top: 0;
-	background-color: rgba(100%,100%,100%,0.7);
-	z-index: 1;
+	background-color: rgba(100%,100%,100%,0.8);
+	z-index: 2;
+}
+
+/* 導覽列設定 */
+nav.nav_list{
+	/* border: 1px solid blue;	 */
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 
-/*左區塊導覽列*/
-nav.nav_left{
-/*	border: 2px solid black;*/
-	display: inline-block;
-	position:absolute;
-	left:0;
-	top:50%;
-	transform: translateY(-50%);
-}
-
-ul.nav_list1{
-	display: inline-block;
+/* 左導覽列///////////////////////////////////////////////////////// */
+nav.nav_list ul.nav_left{
 	list-style: none;
 	margin-left: 80px;
-
-
+	display: inline-flex;
+	position: relative;
+	/* border: 1px solid red; */
+	height: 70px;
+	align-items: center;
 }
 
-ul.nav_list1 li{
-	display: inline-block;
-	margin-right: 15px;
-	font-size: 14px;
+nav.nav_list ul.nav_left > li{
+	margin-right: 8px;
+	/* border: 1px solid #956134; */
+	display: flex;
+	align-items: center;
+	height: 40px;
+	/* 左導覽列文字框的右距 */
 }
-ul.nav_list1 a{
-	display: inline-block;
-	padding: 5px 3px;
+
+/* 標題區塊hover效果 ////////////////////////////////////////////////*/
+
+
+nav.nav_list ul.nav_left > li:hover{
+	border-bottom: 2px solid #AE8663;
+	color: #815B3B;
+}
+
+nav.nav_list ul.nav_left a{
 	text-decoration: none;
-	list-style: none;
-	font-family: Noto Sans TC;
-	font-weight: bold;
-	font-size: 14px;
 	color: #956134;
 	letter-spacing: 4px;
-	border-bottom: solid 1.5px #956134;
-}
-
-
-
-/*右區塊導覽列*/
-.nav2{
-	display: inline-block;
-	float: right;
-	right: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 80px;
-}
-
-div.parent_block::after{
-	content: "";
-	display: block;
-	clear: both;
-}
-
-
-
-
-.ig_logo{
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.online_shop{
-	display: inline-block;	
-	font-size: 14px;
-	color: #956134;
-	letter-spacing: 5px;
-	text-decoration: none;
-	border: 1.75px solid #956134;
-	padding: 10px 30px;
-	border-radius: 20px;
-	margin-right: 15px;
 	font-weight: bold;
-	vertical-align: middle;
+	font-size: 14px;
+	padding: 0 3px 0;
 }
 
-.logo_img{
+/* 精選飾品樣式 */
+
+div.jewelry_list{
+	font-size: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+div.jewelry_list > a{
+	letter-spacing: 8px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	margin: 15px 0;	
+}
+
+
+/* 下拉選單 ///////////////////////////////////////////////////*/
+div.jewelry_list > ul.jewelry_list_option{
+	/* border: 2px solid purple; */
 	position: absolute;
-	top: 35px;
-	right: 50%;
-	transform: translateX(50%);
+	top: 69.5px; 
+}
+
+div.jewelry_list > ul.jewelry_list_option > li{
+	list-style: none;
+	/* border: 1px solid red; */
+	padding: 10px 0 ;
+	background-color: rgba(100%,100%,100%,0.8);
+}
+
+div.jewelry_list > ul.jewelry_list_option > li > a{
+	border-bottom: initial;	
+}
+
+
+/* 下拉選單hover效果 */
+div.jewelry_list:hover ul.jewelry_list_option{
+	display: block;
+}
+
+div.jewelry_list  ul.jewelry_list_option{
+	display: none;
+}
+ 
+
+
+/* 右導覽列 */
+
+nav.nav_list ul.nav_right{
+	/* border: 2px solid pink; */
+	list-style: none;
+	margin-right: 80px;	
+	display: flex;
+	align-items: center;
+}
+
+nav.nav_list ul.nav_right li{
+	display: flex;
+	align-items: center;
+	/* border: 1px solid blue; */
+	height: 70px;
+}
+
+nav.nav_list ul.nav_right li a{
+	text-decoration: none;
+	color: #956134;
+	/* border: 1px solid blue; */
+	display: inline-block;
+	letter-spacing: 3px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+nav.nav_list ul.nav_right li a.about_us{
+	margin-right: 15px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 3px;
+	
+}
+
+nav.nav_list ul.nav_right li a.online_shop{
+	border: 2px solid #956134;
+	margin-right: 20px;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+
+nav.nav_list ul.nav_right > li a.about_us:hover{
+	border-bottom: 2px solid #AE8663;
+	color: #815B3B;
+}
+
+nav.nav_list ul.nav_right > li a.online_shop:hover{
+	background-color: #956134;
+	color: white;
+	font-weight: initial;
+}
+
+nav.nav_list ul.nav_right > li a.header_ig_logo:hover{
+	opacity: 80%;
+}
+
+
+/* logo及messenger元素 */
+
+.index_logo{
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
 	z-index: 1;
 
 }
 
-/* 滑鼠移入效果 */
+.messenger{
+	position: fixed;
+	bottom: 100px;
+	right: 50px;
+	z-index: 2;
+}
+
+.messenger:hover{
+	bottom: 120px;
+	opacity: 0.5;
+}
+
+/* 行動版菜單樣式 */
+
+/* menu英文字樣式 */
+.showmenu{
+	text-decoration: none;
+	color: #956134;
+	letter-spacing: 4px;
+	font-size: 18px;
+	/* border: 1px solid blue; */
+	position: absolute;
+	left: 10px;
+	display: none;
+}
+
+.showmenu:hover{
+	color: #AE8663;
+}
+
+
+/* PC版隱藏menu英文字 */
+.showmenu{
+	display: none;
+}
+
+
+/* 中文下拉選單樣式 */
+.menu {
+	/* border: 1px solid blue; */
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	/* height: 100%; */
+	background-color: rgba(100%,100%,100%,0.8);	
+}
+
+.menu li{
+	list-style: none;
+	/* border-bottom: 1px solid #AE8663; */
+	text-align: center;
+}
+
+.menu a{
+	text-decoration: none;
+	/* border: 1px solid red; */
+	display: block;
+	padding: 20px;
+	color: #956134;
+	letter-spacing: 4px;
+	font-weight: bold;
+	font-size: 14px;	
+}
+
+.menu li.menu_onlineshop{
+	/* border: 1px solid red; */
+}
+
+.menu a.menu_onlineshop{
+	border: 1px solid #956134;
+	padding: initial;
+	display: inline-block;
+	padding: 15px 40px;
+	margin: 20px 0;
+}
+
+
+/* 隱藏中文下拉選單 */
+	.menu{
+		display: none;
+	}
 
 
 @media (min-width: 992px) and (max-width: 1199px){
 
-	/*左區塊導覽列*/
-	ul.nav_list1{
+	nav.nav_list ul.nav_left{
 		margin-left: 50px;
 	}
-	
-	ul.nav_list1 li{
-		margin-right: 13px;
-		font-size: 14px;
-	}
-	ul.nav_list1 a{
-		letter-spacing: 2px;
-	}
 
-	/*右區塊導覽列*/
-	.nav2{
-		margin-right: 50px;
-	}	
-
+	nav.nav_list ul.nav_right{
+		margin-right: 50px;	
+	}
 }
-
 
 @media (min-width: 768px) and (max-width: 991px){
-		/*左區塊導覽列*/
-		ul.nav_list1{
-			margin-left: 30px;
-		}
-		
-		ul.nav_list1 li{
-			margin-right: 10px;
-			font-size: 14px;
-		}
-		ul.nav_list1 a{
-			letter-spacing: 0.5px;
-		}
-	
-		/*右區塊導覽列*/
-		.nav2{
-			margin-right: 30px;
-		}	
 
-		.logo_img{
-			right: 45%;
-			text-align: center;
-		}
+	nav.nav_list ul.nav_left{
+		margin-left: 30px;
+	}
 
-		.logo_img > img{
-			width: 90%;
-		}
+	nav.nav_list ul.nav_left a{
+		letter-spacing: 3px;
+		padding: 0 3px 5px;
+	}
 
-}
+	nav.nav_list ul.nav_right{
+		margin-right: 30px;	
+	}
 
-@media (min-width: 576px) and (max-width: 767px){
+	nav.nav_list ul.nav_right li a.about_us{
+		margin-right: 10px;
+	}
 	
-				/*左區塊導覽列*/
-				ul.nav_list1{
-					margin-left: 10px;
-				}
-				
-				ul.nav_list1 li{
-					margin-right: 5px;
-					font-size: 12px;
-				}
-				ul.nav_list1 a{
-					letter-spacing: 3px;
-				}
-			
-				/*右區塊導覽列*/
-				.nav2{
-					margin-right: 8px;
-				}	
-		
-				.logo_img{
-					right: 50%;
-					text-align: center;
-					top:90px;
-				}
-	
-				.logo_img > img{
-					width: 80%;
-				}
-	
-				.online_shop{
-					font-size: 14px;
-					letter-spacing: 2px;
-					padding: 10px 13px;
-					margin-right: 10px;
-	
-				}
+	nav.nav_list ul.nav_right li a.online_shop{
+		margin-right: 15px;
+		padding: 5px 15px;
+	}
+
+	.index_logo{
+	transform: translatex(-20%);
+	}
 
 }
 
-@media (max-width: 575px){
-				/*左區塊導覽列*/
-				ul.nav_list1{
-					margin-left: 8px;
-				}
-				
-				ul.nav_list1 li{
-					margin-right: 3px;
-					font-size: 12px;
-				}
-				ul.nav_list1 a{
-					letter-spacing: 0px;
-				}
-			
-				/*右區塊導覽列*/
-				.nav2{
-					margin-right: 8px;
-				}	
-		
-				.logo_img{
-					right: 50%;
-					text-align: center;
-					top:80px;
-				}
+
+@media (max-width: 767px){
+
+	.showmenu{
+		display: block;
+	}
+
+	.menu {
+
+		display: block;
+
+		/* 隱藏選單開始 */
+		max-height: 0px;
+		overflow: hidden;
+		/* 隱藏選單結束 */
+	}
+
+
+	.menu li a:hover{
+		background: #AE8663;
+		color: white;
+		font-weight: initial;
+	}
+
+	/*jQ點擊後動態在 body 加上 class */
+
+	.menu-show .menu{
+		max-height: 800px; // 選單的高度，原本是設成 0 px
+	}
+
+	.index_logo{
+		/* display: none; */
+	}
+
+	nav.nav_list ul.nav_left{
+		display: none;
+	}
+
+	nav.nav_list ul.nav_right{
+		margin-right: 10px;	
+	}
+
+	nav.nav_list ul.nav_right li a.about_us{
+		display: none;
+	}
 	
-				.logo_img > img{
-					width: 70%;
-				}
+	nav.nav_list ul.nav_right li a.online_shop{
+		display: none;
+	}
+
+	a.messenger{
+		display: none;
+
+	}
+
+
+
+
+
+
 	
-				.online_shop{
-					font-size: 12px;
-					letter-spacing: 2px;
-					padding: 10px 13px;
-					font-weight: bold;
-					margin-right: 5px;
-	
-				}
-	
+
+
+
+
+
 }
+
+
+
 
