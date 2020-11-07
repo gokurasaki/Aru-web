@@ -139,14 +139,6 @@ nav.nav_list ul.nav_right li a{
 	font-weight: bold;
 }
 
-nav.nav_list ul.nav_right li a.about_us{
-	margin-right: 15px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	padding: 0 3px;
-	
-}
 
 nav.nav_list ul.nav_right li a.online_shop{
 	border: 2px solid #956134;

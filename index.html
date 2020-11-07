@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="./css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- <script src="./js/index.js"></script> -->
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/slick-theme.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -39,7 +42,7 @@
 				</li>
 
 				<li>
-					<a class="brandstory" href="./html/brandstory.html">品牌故事</a>
+					<a class="brandstory" href="./html/brandstory.html">關於我們</a>
 				</li>
 			</ul>
 
@@ -47,13 +50,11 @@
 				<li><a href="./html/news.html">最新消息</a></li>
 				<li><a href="./html/jewelry.html">精選飾品</a></li>
 				<li><a href="./html/workshop.html">工作坊</a></li>
-				<li><a href="./html/brandstory.html">品牌故事</a></li>
 				<li><a href="./html/aboutus.html">關於我們</a></li>
 				<li class="menu_onlineshop"><a class="menu_onlineshop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
 			</ul>
 
 			<ul class="nav_right">
-				<li><a class="about_us" href="./html/aboutus.html">關於我們</a></li>
 				<li><a class="online_shop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
 				<li><a class="header_ig_logo" href="https://www.instagram.com/aru_deco/?hl=zh-tw"><img src="./img/ig_logo.svg" alt=""></a></li>
 			</ul>
@@ -68,22 +69,28 @@
 	
 	<main>
 		<section class="brand_descript">
-			<h2>ARUDECO STUDIO</h2>
-			<h5>用自然的花草，為生活增添一點裝飾</h5>
-			<hr>
-			<p>以恣意的花草型態，打造你的專屬飾品<br>採用日本Dip造花液、Padico UV膠原料創作<br>將季節之花形帶入飾品，融入妳的生活之中。</p>
-			<img src="./img/index_img.jpg" alt="">
+			<h2 data-aos="flip-up">ARUDECO STUDIO</h2>
+			<h5 data-aos="fade-up">用自然的花草，為生活增添一點裝飾</h5>
+			<hr data-aos="fade-up">
+			<p data-aos="fade-up">以恣意的花草型態，打造你的專屬飾品<br>採用日本Dip造花液、Padico UV膠原料創作<br>將季節之花形帶入飾品，融入妳的生活之中。</p>
+
+			<ul class="banner_img">
+				<li><img src="./img/index_img.jpg" alt=""></li>
+				<li><img src="http://placehold.it/1360x620" alt=""></li>
+				<li><img src="http://placehold.it/1360x620" alt=""></li>
+			</ul>
+
 		</section class="news_block">
 
 
-		<section class="news_block">
+		<section class="news_block" data-aos="fade-down">
 			<div class="title_block">
 				<img src="./img/titleimg.svg" alt="">
 				<h2>NEWS</h2>
 				<img src="./img/titleimg.svg" alt="">
 			</div>
 			<h3>最新消息</h3>
-			<div class="news_block_descipt">
+			<div class="news_block_descipt" data-aos="fade-right">
 				<div class="text_block">
 					<a href="">
 						<p class="event">2020.10.10&emsp;小蝸牛市集 IN 台中審計新村</p>
@@ -94,7 +101,7 @@
 					<img src="./img/arrow.svg" alt="">
 				</a>
 			</div>
-			<div class="news_block_descipt">
+			<div class="news_block_descipt" data-aos="fade-right">
 				<div class="text_block">
 					<a href="">
 						<p class="event">2020.06.06&emsp;邊緣人市集 IN 寶藏巖國際藝術村</p>
@@ -109,7 +116,7 @@
 			<div class="swiper-wrapper">
 				<div class="card">
 					<a href="">
-						<div class="card_img">
+						<div class="card_img" data-aos="zoom-in-up">
 							<img src="./img/swiper-wrapper-1@2x.jpg" alt="">
 						</div>
 						<p class="card_title">有飾初登場 in 四四南村</p>
@@ -119,7 +126,7 @@
 				
 				<div class="card">
 					<a href="">
-						<div class="card_img">
+						<div class="card_img" data-aos="zoom-in-up">
 							<img src="./img/swiper-wrapper-2@2x.jpg" alt="">
 						</div>
 						<p class="card_title">宜蘭高商教學首次亮相</p>
@@ -129,7 +136,7 @@
 				
 				<div class="card">
          			<a href="">
-						<div class="card_img">
+						<div class="card_img" data-aos="zoom-in-up">
 							<img src="./img/swiper-wrapper-3@2x.jpg" alt="">
 						</div>
 						<p class="card_title">邊緣人 in 寶藏巖國際藝術村</p>
@@ -139,7 +146,7 @@
 
 				<div class="card">
 					<a href="">     
-						<div class="card_img">
+						<div class="card_img" data-aos="zoom-in-up">
 							<img src="./img/swiper-wrapper-4@2x.jpg" alt="">
 						</div>
 						<p class="card_title">小蝸牛市集 in 審計新村</p>
@@ -149,7 +156,7 @@
 
 			</div>
 
-			<div class="viewmore">
+			<div class="viewmore" data-aos="fade-up">
 				<a  href="">View&nbsp;more</a>
 				<img src="./img/arrow – 2.svg" alt="">
 			</div>
@@ -162,7 +169,7 @@
 				<img src="./img/titleimg.svg" alt="">
 			</div>
 			<h3>精選飾品</h3>
-			<div class="product_storyblock">
+			<div class="product_storyblock" data-aos="zoom-in-right">
 				<div class="product_storyblock_textblock">
 					<h3>用自然的花草<br>為生活增添一點裝飾</h3>
 					<p>以四季及日常之花草為單位型，讓你的生活增添點自然的清新，除了個人飾品選購，另提供送禮精緻服務，讓你一同與友人們分享感受自然花草的喜悅。</p>
@@ -174,7 +181,7 @@
 				<img src="./img/product.gif" alt="">
 			</div>
 
-			<div class="product_descript_block">
+			<div class="product_descript_block" data-aos="fade-left">
 				<img src="./img/product2.gif" alt="">
 				<div class="product_descript_textblock">
 					<h3>以工藝的直覺經營生活</h5>
@@ -183,7 +190,7 @@
 			</div>
 
 			<div class="product_itemblock">
-				<div class="product_card">
+				<div class="product_card" data-aos="fade-down">
 					<a href="">     
 						<div class="card_img">
 							<img src="./img/product_item-1@2x.jpg" alt="">
@@ -198,7 +205,7 @@
 					</a> 
 				</div>
 
-				<div class="product_card">
+				<div class="product_card" data-aos="fade-up">
 					<a href="">     
 						<div class="card_img">
 							<img src="./img/product_item – 2@2x.jpg" alt="">
@@ -213,7 +220,7 @@
 					</a> 
 				</div>
 
-				<div class="product_card">
+				<div class="product_card" data-aos="fade-down">
 					<a href="">     
 						<div class="card_img">
 							<img src="./img/product_item – 3@2x.jpg" alt="">
@@ -243,7 +250,7 @@
 			</div>
 			<h3>工作坊</h3>
 
-			<div class="workshop_storyblock">
+			<div class="workshop_storyblock" data-aos="zoom-in-left">
 				<img src="./img/index_workshop.gif" alt="">
 				<div class="workshop_storyblock_textblock">
 					<h3>有飾工作坊<br>樹脂飾品製作</h3>
@@ -276,6 +283,21 @@
 
 
 	</footer>
+
+	<script src="./js/jquery-3.5.1.js"></script>
+	<script src="./js/slick.js"></script>
+
+	<script>
+        AOS.init({
+            duration: 1200,
+        });
+      </script>
+	
+    <script>
+        $('.banner_img').slick({
+            dots: true
+        });
+    </script>
 
 	<script>
         $(document).ready(function() {
