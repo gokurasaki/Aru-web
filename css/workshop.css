@@ -1,10 +1,9 @@
 @import "./header.css";
 @import "./footer.css";
 
-header.header nav.nav_list ul.nav_left li:first-child{
+header.header nav.nav_list ul.nav_left li:nth-child(3){
     border-bottom: 2px solid #AE8663;
 }
-
 
 
 

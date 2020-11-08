@@ -2,46 +2,116 @@
 <html lang="zh-TW">
 <head>
 	<meta charset="UTF-8">
-	<title>有飾:Arudeco</title>
-	<link rel="stylesheet" href="./css/workshop.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arudeco: 有飾 / 讓生活多一點裝飾</title>
+	<link rel="stylesheet" href="../css/workshop.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/slick-theme.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
 	<header class="header">
-		<div class="parent_block">
-		  	<nav class="nav1">
-		        <ul class="nav_list1">
-		          <li><a href="./index.html">品牌故事</a></li>
-		          <li><a href="#">精選飾品</a></li>
-		          <li><a href="./news.html">最新消息</a></li>
-		          <li><a href="./workshop.html">工作坊</a></li>  
-		        </ul>
-		    </nav>
+		<nav class="nav_list">
+			<a href="#" class="showmenu">menu</a>
 
-		    <div class="nav2">
-		    	<a class="online_shop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589" target="_blank">線上商店</a>
+			<ul class="nav_left">
+				<li>
+					<a class="news" href=".//news.html">最新消息</a>
+				</li>
 
-		    	<a href="https://www.instagram.com/aru_deco/?hl=zh-tw" target="_blank" class="ig_logo"><img src="./img/ig_logo.svg"></a>
-		    </div>
-		</div>
+				<li>
 
+					<div class="jewelry_list">
+						<a href="./html/jewelry.html">精選飾品</a>
+						<ul class="jewelry_list_option">
+							<li><a href="./drop_earrings.html">垂墜系列</a></li>
+							<hr>
+							<li><a href="./earrings.html">貼耳系列</a></li>
+							<hr>
+							<li><a href="/pierce.html">夾式耳環</a></li>	
+						</ul>
+					</div>
+				</li>
 
+				<li>
+					<a class="workshop" href="./html/workshop.html">工作坊</a>
+				</li>
+
+				<li>
+					<a class="brandstory" href="./html/brandstory.html">關於我們</a>
+				</li>
+			</ul>
+
+			<ul class="menu">
+				<li><a href="./news.html">最新消息</a></li>
+				<li><a href="./jewelry.html">精選飾品</a></li>
+				<li><a href="./workshop.html">工作坊</a></li>
+				<li><a href="./aboutus.html">關於我們</a></li>
+				<li class="menu_onlineshop"><a class="menu_onlineshop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
+			</ul>
+
+			<ul class="nav_right">
+				<li><a class="online_shop" href="https://shopee.tw/arudecostudio?categoryId=2580&itemId=5436635589">線上商店</a></li>
+				<li><a class="header_ig_logo" href="https://www.instagram.com/aru_deco/?hl=zh-tw"><img src="../img/ig_logo.svg" alt=""></a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<a class="index_logo" href="../index.html"><img src="../img/logo.svg" alt=""></a>
+
+	<a class="messenger" href="https://m.me/ARUDECO" target="_blank"><img src="../img/messenger_icon.svg"/></a>
+	
+	<main>
+
+	</main>
+    
 	<footer class="footer">
 		<div class="footer_item">
+
 			<p class="cc">© Arudeco Inc. All Rights Reserved.</p>
+
 			<img class="footer_logo" src="./img/footer_logo.svg" alt="">
+
 			<div class="follow_us">
+
 				<p>follow us</p>
-	    		<a href="https://www.facebook.com/ARUDECO" target="_blank" class="fb_logo"><img src="./img/facebook.svg"></a>
-	    		<a href="https://www.instagram.com/aru_deco/?hl=zh-tw" target="_blank" class="ig_logo"><img src="./img/ig_logo_footer.svg"></a>
+	    		<a href="https://www.facebook.com/ARUDECO" target="_blank" class="fb_logo"><img src="../img/facebook.svg"></a>
+	    		<a href="https://www.instagram.com/aru_deco/?hl=zh-tw" target="_blank" class="ig_logo"><img src="../img/ig_logo_footer.svg"></a>
 
 			</div>
 
 
-		</div>
-
-		
 	</footer>
 
-	<script src="./js/index.js"></script>	
+	<script src="./js/jquery-3.5.1.js"></script>
+	<script src="./js/slick.js"></script>
+
+	<script>
+        AOS.init({
+            duration: 1200,
+        });
+      </script>
+	
+    <script>
+        $('.banner_img').slick({
+            dots: true
+        });
+    </script>
+
+	<script>
+        $(document).ready(function() {
+            $('.showmenu').on('click',  function(e){
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
+        });
+    </script>
+	
 </body>
 </html>
