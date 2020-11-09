@@ -41,7 +41,6 @@ main{
 .title_chinese {
 	display: flex;
 	font-size: 18px; 
-	font-family: baskerville-display-pt,YuMincho,Yu Mincho;
 	letter-spacing: 12px;
 	justify-content: center;
 	margin-top: 40px;
@@ -204,6 +203,10 @@ main{
         letter-spacing: 10px;
     }
 
+    .title_chinese {
+        letter-spacing: 8px;
+    }
+
     .container {
         margin: 0 auto;
         width: calc(100% - 20px);
@@ -242,6 +245,11 @@ main{
     .title{
         font-size: 48px;
         letter-spacing: 5px;
+    }
+
+    .title_chinese {
+        font-size: 15px;
+        letter-spacing: 0px;
     }
 
     .container {
