@@ -132,6 +132,7 @@ button {
 
 @media (max-width: 767px){
 
+
     main{
         margin: 0 auto;
         text-align: center;
@@ -155,6 +156,12 @@ button {
     .sign_up_text{
 
         margin-top: 80px;
+    }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 
 }

@@ -127,6 +127,12 @@ main{
 
 @media (max-width: 767px){
 
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
     main{
         margin: 0 auto;
         width: calc(100% - 20px);
