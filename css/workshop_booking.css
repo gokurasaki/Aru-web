@@ -132,6 +132,10 @@ button {
 
 @media (max-width: 767px){
 
+    .index_logo{
+        display: none;
+    }
+
 
     main{
         margin: 0 auto;
@@ -142,7 +146,9 @@ button {
     .title{
         font-size: 60px;
         letter-spacing: 3px;
+        margin-top: 0px;
     }
+
 
     .card_img{
         width: 85%;
