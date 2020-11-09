@@ -1,0 +1,172 @@
+@import "./header.css";
+@import "./footer.css";
+
+header.header nav.nav_list ul.nav_left li:nth-child(3){
+    border-bottom: 2px solid #AE8663;
+}
+
+
+main{
+	margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 160px);
+}
+
+/*Arudeco標題---------------------*/
+
+.title_block{
+    margin: 0 auto;
+}
+
+.title{
+	text-align: center;
+	margin-top: 200px;
+	font-family: 'Cormorant Unicase', serif;
+	color: #956134;
+    font-size: 7rem;
+	letter-spacing: 12px;
+}
+
+.slogan{
+	text-align: center;
+	padding:  30px 5px;
+    letter-spacing: 12px;
+    color: #956134;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btmline{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: #956134;
+}
+
+
+/* 課程圖片資訊 */
+.workshop_item{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workshop_item_block{
+    margin-right: 15px;
+    /* border: 1px solid red; */
+}
+
+.workshop_item_block:nth-child(even){
+    margin-right: 0px;
+}
+
+.workshop_item_block a{
+    margin: 80px 0px 50px 0;
+    color: #956134;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.workshop_item_block a:hover{
+    opacity: 0.8;
+}
+
+.workshop_item_img{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.workshop_item_img img{
+    max-width: 100%;
+    display: inline-block;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+
+}
+
+.workshop_item_block img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+
+.item_text_block{
+    display: inline-block;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.item_text_block h5{
+    font-family: baskerville-display-pt,YuMincho,Yu Mincho;
+    font-size: 21px;
+    letter-spacing: 12px;
+}
+
+.item_text_block p{
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+.item_text_block p.booking{
+    display: inline-block;
+    background-color: #956134;
+    color: white;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    letter-spacing: 8px;
+}
+
+
+
+@media (max-width: 767px){
+
+
+    main{
+        margin: 0 auto;
+        width: calc(100% - 20px);
+    }
+
+    .index_logo{
+        display: none;
+    }
+
+    .title {
+        margin-top: 0;
+        font-family: 'Cormorant Unicase', serif;
+        font-size: 52px;
+        letter-spacing: 5px;
+    }
+
+    .slogan {
+        padding: 30px 5px;
+        letter-spacing: 8px;
+        font-size: 16px;
+    }
+
+    .workshop_item_block {
+        margin-right: 0px;
+    }
+
+    .workshop_item_block a {
+        flex-direction: column;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .item_text_block {
+        display: inline-block;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }  
+
+} 
+
+
+
+

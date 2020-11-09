@@ -65,6 +65,10 @@ p.cc{
 }
 
 @media (max-width: 767px){
+
+	.footer_item{
+		justify-content: space-around;
+	}
 	.footer_logo{
 		display: none;
 	}
@@ -72,5 +76,22 @@ p.cc{
 	.follow_us p{
 		display: none;
 	}
+
+	p.cc{
+		margin-left: 10px;
+	}
+
+	.follow_us{
+		margin-right: 10px;
+	}
+
+	.follow_us a.fb_logo{
+        margin-right: 0;
+    }
+
+    .follow_us a.ig_logo{
+        display: none;
+    }
+
 
 }

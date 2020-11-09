@@ -6,6 +6,199 @@ header.header nav.nav_list ul.nav_left li:nth-child(3){
 }
 
 
+main{
+    border: 2px solid blue;
+    margin-top: 200px;
+
+}
+
+.workshop_banner{
+	text-align: center;
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+
+}
+
+.workshop_banner img{
+    max-width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    color: #956134;
+    width: calc(100% - 160px);
+}
+
+.title{
+	font-family: 'Cormorant Unicase', serif;
+	color: #956134;
+    font-size: 7rem;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.title_chinese {
+	display: flex;
+	font-size: 18px; 
+	font-family: baskerville-display-pt,YuMincho,Yu Mincho;
+	letter-spacing: 12px;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.title_chinese h2{
+	margin: 0 10px 0px 10px;
+}
+
+/* 工作坊敘述 */
+.workshop_descript{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+/* 預約報名按鈕--------------------------------------- */
+
+.booking_btn{
+    margin: 0 auto;
+    text-align: center;   
+}
+
+.booking_btn a:hover{
+    opacity: 0.8;
+}
+
+.booking_btn a{
+	background-color: #956134;
+	color: white;
+	padding: 12px 45px;
+	border-radius: 20px;
+    letter-spacing: 12px;
+    margin: 0px 0 60px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* 精選飾品卡片區--------------------------------- */
+.product_itemblock{
+    border: 1px solid red;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.product_itemblock .product_card{
+    border: 1px solid blue;
+    margin: 15px 0;
+    margin-right: 50px;
+}
+
+.product_itemblock .product_card_img img{
+    max-width: 100%;
+}
+
+.product_itemblock .product_card:last-child{
+    margin-right: 0;
+}
+
+.product_itemblock .product_card:nth-child(4n){
+    margin-right: 0px;
+}
+
+.product_itemblock .product_card a{
+    text-decoration: none;
+    color: #956134;
+}
+
+.product_itemblock .product_card .card_img{
+    overflow: hidden;
+}
+
+.product_itemblock .product_card a img{
+    overflow: hidden;
+    max-width: 100%;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
+}
+
+.product_itemblock .product_card a img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.product_card_description{
+    text-align: center;
+    line-height: 2;
+
+}
+
+.product_card_description  > p.card_title{
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 8px 0 0;
+    margin-top: 20px;
+}
+
+.product_card_description > p.descript{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+
+
+.product_card_description > p.date{
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.product_card_description > p.buy_it{
+    color: white;
+    font-weight: 8px;
+    letter-spacing: 3px;
+    padding: 20px 32px;
+    background-color: #AE8663;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product_card_description > p.buy_it:hover{
+    opacity: 0.8;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .container {
+        margin: 0 auto;
+        width: calc(100% - 80px);
+        margin-top: 180px;
+    }
+
+}
+
+
+@media (max-width: 767px){
+
+    .container {
+        margin: 0 auto;
+        width: calc(100% - 20px);
+        margin-top: 180px;
+    }
+
+
+}
+
 
 
 
