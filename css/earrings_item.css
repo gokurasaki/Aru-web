@@ -249,8 +249,6 @@ a.btn:hover{
         margin-left: 50px;
     }
 
-
-
     .other_option {
         margin-top: 50px;
         width: 100%;
@@ -278,7 +276,6 @@ a.btn:hover{
     .container{
         margin: 0 auto;
         width: calc(100% - 50px);
-        margin-top: 50px;
     }
 
 
@@ -329,7 +326,10 @@ a.btn:hover{
     .container{
         margin: 0 auto;
         width: calc(100% - 50px);
-        margin-top: 50px;
+    }
+
+    .breadcrumbs a{
+        letter-spacing: 3px;
     }
 
 

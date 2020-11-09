@@ -657,13 +657,11 @@ div.workshop_storyblock_textblock div.viewmore a{
         line-height: 24px;
         font-size: 13px;
     }
-    
-
 
 }
 
 
-@media (max-width: 768px){
+@media (min-width: 500px) and(max-width: 768px){
     .title_block img{
         display: none;
     }
@@ -750,12 +748,129 @@ div.workshop_storyblock_textblock div.viewmore a{
         text-align: center;
     }
 
+}
+
+
+@media (max-width: 499px){
+
+    main{
+        margin: 0 auto;
+        text-align: center;
+        width: calc(100% - 20px);
+    }
+
+    section.brand_descript h2 {
+        font-size: 48px;
+        letter-spacing: 5px;
+    }
+
+    .title_block h2 {
+        font-size: 48px;
+        letter-spacing: 4px;
+    }
     
 
+    .title_block img{
+        display: none;
+    }
+
+    section.brand_descript p {
+        line-height: 2rem;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    section.news_block div.news_block_descipt{
+        width: 85%;
+    }
+
+    section.news_block div.news_block_descipt .text_block a > p.event{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    section.news_block .swiper-wrapper{
+        flex-direction: column;
+    }
+
+    .swiper-wrapper .card{
+        width: 100%;
+    }
+
+    /* 精選飾品區//////////////////////////////////////// */
+    div.product_storyblock{
+        flex-direction: column-reverse;
+    }
+
+    div.product_storyblock img{
+        width: 100%;
+    }
+
+    div.product_storyblock_textblock{
+        text-align: center;
+        margin: 0;
+        padding: 20px 10px 20px 10px;
+    }
+
+    div.product_storyblock_textblock p{
+        margin: 40px 10px 40px 10px;
+    }
+
+    div.product_storyblock_textblock h3{
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin-top: 50px;
+        line-height: 2rem;
+    }
 
 
+    /* 飾品製作描述區 -----------------------------------------*/
+
+    section.product_block .product_descript_block{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    
+    section.product_block .product_descript_textblock{
+        text-align: center;
+        width: 80%;
+        margin: 50px 0 50px 0;
+    }
+
+    /* 精選飾品卡片區--------------------------------- */
+    section.product_block .product_itemblock{
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: initial
+    }
+
+    .product_itemblock .product_card {
+        margin-right: initial;
+    }
 
  
+
+    /* 工作坊區//////////////////////////////////////// */
+    div.workshop_storyblock{
+        flex-direction: column;
+    }
+
+    div.workshop_storyblock img{
+        width: 100%;
+    }
+
+    div.workshop_storyblock_textblock{
+        padding: 50px 20px 50px 20px;
+        text-align: center;
+    }
+
+    div.workshop_storyblock_textblock h3 {
+        font-size: 28px;
+        letter-spacing: 8px;
+        line-height: 3rem;
+        margin: 0;
+    }
 
 }
 
