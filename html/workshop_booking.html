@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="../css/workshop_booking.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./css/slick-theme.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -63,18 +61,18 @@
 
 	</header>
 
-	<a class="index_logo" href="../index.html"><img src="../img/logo.svg" alt=""></a>
+	<a class="index_logo" data-aos="flip-left" href="../index.html"><img src="../img/logo.svg" alt=""></a>
 
 	
 	<main>
 
         <div class="title_block">
-			<p class="title">workshop</p>
-			<p class="slogan">工作坊課程報名填寫</p>
+			<p class="title" data-aos="flip-up">workshop</p>
+			<p class="slogan" data-aos="flip-up">工作坊課程報名填寫</p>
 			<hr class="btmline">
         </div>
         
-        <div class="sign_up_block">
+        <div class="sign_up_block" data-aos="flip-left">
 
             <div class="card_img">
                 <a href="#">
@@ -129,7 +127,7 @@
 
 			<p class="cc">© Arudeco Inc. All Rights Reserved.</p>
 
-			<img class="footer_logo" src="./img/footer_logo.svg" alt="">
+			<img class="footer_logo" src="../img/footer_logo.svg" alt="">
 
 			<div class="follow_us">
 
@@ -142,20 +140,11 @@
 
 	</footer>
 
-	<script src="./js/jquery-3.5.1.js"></script>
-	<script src="./js/slick.js"></script>
-
 	<script>
         AOS.init({
             duration: 1200,
         });
       </script>
-	
-    <script>
-        $('.banner_img').slick({
-            dots: true
-        });
-    </script>
 
 	<script>
         $(document).ready(function() {

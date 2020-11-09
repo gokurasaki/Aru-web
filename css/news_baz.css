@@ -1,0 +1,357 @@
+@import "./header.css";
+@import "./footer.css";
+
+header.header nav.nav_list ul.nav_left li:first-child{
+    border-bottom: 2px solid #AE8663;
+}
+
+
+main{
+	margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 160px);
+    margin-top: 180px;
+}
+
+/*Arudeco標題---------------------*/
+
+.title_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_option{
+    display: flex;
+    flex-direction: row;
+    color: #956134;
+}
+
+.card_option p{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card_option_all{
+    border: 1px solid #AE8663;
+    letter-spacing: 10px;
+    padding: 5px 25px 5px 25px;
+    background-color: #AE8663;
+    color: white;
+    font-family: 微軟正黑體;
+
+}
+
+
+.card_option p.education, .card_option p.workshop{
+    border: 1px solid #AE8663;
+    letter-spacing: 10px;
+    padding: 5px 25px 5px 25px;
+}
+
+.card_option p.bazaar{
+    border: 1px solid #AE8663;
+    letter-spacing: 10px;
+    padding: 5px 12px 5px 12px;
+}
+
+
+.card_option p:hover{
+    background-color: #AE8663;
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+.title{
+    text-align: left;
+    color: #956134;
+    margin-left: 50px;
+}
+
+
+.title_block{
+    margin: 0 auto;
+}
+
+.title_block{
+    display: flex;
+    justify-content: left;
+}
+
+.title_block h2{
+    font-size: 64px;
+    letter-spacing: 8px;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: initial;
+}
+
+.title_block img{
+    margin: 0px;
+}
+
+.title_bar h3{
+    font-size: 21px;
+    letter-spacing: 14px;
+    margin: 5px 0 25px;
+}
+
+
+/* 最新消息卡片區域 */
+.news_card_block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 50px 0 50px;
+}
+
+.news_card_block .card{
+    /* border: 1px solid blue; */
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+
+
+.news_card_block .card a{
+    text-decoration: none;
+    color: #956134;
+}
+
+.news_card_block .card .card_img{
+    /* border: 1px solid blue; */
+    overflow: hidden;
+} 
+
+.news_card_block .card .card_img img{
+    overflow: hidden;
+    max-width: 100%;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
+}
+
+.news_card_block .card .card_img img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.news_card_block .card p.card_title{
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 8px 0 0;
+    font-size: 18px;
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.news_card_block .card p.date{
+    letter-spacing: 3px;
+    padding-top: 10px;
+    font-family: 微軟正黑體;
+    color: #AE8663;
+
+}
+
+.news_card_block .card p.option{
+    letter-spacing: 3px;
+    font-family: 微軟正黑體;
+    color: #AE8663;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    main{
+        width: calc(100% - 60px);
+    }
+
+    .title {
+        margin-left: 0px;
+    }
+
+    .title_block h2 {
+        font-size: 52px;
+        letter-spacing: 5px;
+    }
+
+    .card_option_all{
+        padding: 5px 20px 5px 20px;
+    }
+    
+    
+    .card_option p.bazaar, .card_option p.education{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+    
+    .card_option p.workshop{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+
+    .news_card_block {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+
+
+}
+
+
+@media (min-width: 550px) and (max-width: 768px){
+
+    .index_logo{
+        display: none;
+    }
+
+    main{
+        width: calc(100% - 20px);
+        margin-top: 0;
+    }
+
+    .title_bar {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        margin-left: 0px; 
+        text-align: center;  
+    }
+
+    .title_block img{
+        display: none;
+    }
+
+    .title_block h2 {
+        font-size: 52px;
+        letter-spacing: 5px;
+    }
+
+    .news_card_block .card{
+        width: 48%;
+    }
+
+    .news_card_block .card p.card_title {
+        letter-spacing: 3px;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .card_option_all{
+        padding: 5px 20px 5px 20px;
+    }
+    
+    
+    .card_option p.bazaar, .card_option p.education{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+    
+    .card_option p.workshop{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+
+    .news_card_block {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+} 
+
+
+@media (min-width: 320px) and (max-width: 549px){
+
+    .index_logo{
+        display: none;
+    }
+
+    main{
+        width: calc(100% - 20px);
+        margin-top: 0;
+    }
+
+    .title_bar {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        margin-left: 0px; 
+        text-align: center;  
+    }
+
+    .title_block img{
+        display: none;
+    }
+
+    .title_block h2 {
+        font-size: 52px;
+        letter-spacing: 5px;
+    }
+
+    .news_card_block .card{
+        width: 100%;
+    }
+
+    .news_card_block .card p.card_title {
+        letter-spacing: 3px;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .card_option_all{
+        padding: 5px 20px 5px 20px;
+    }
+    
+    
+    .card_option p.bazaar, .card_option p.education{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+    
+    .card_option p.workshop{
+        letter-spacing: 5px;
+        padding: 5px;
+    }
+
+    .news_card_block {
+        flex-wrap: wrap;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+} 
+
+
+
+
+
+

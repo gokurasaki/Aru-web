@@ -19,7 +19,6 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .hr_title hr{
@@ -45,14 +44,13 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
     text-decoration: none;
     letter-spacing: 8px;
     color: black;
+    margin-right: 80px;
 }
 
 
 .product_list_block{
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .aside{
@@ -93,7 +91,6 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
 
 .product_photo_block{
     width: 78%;
-
 }
 
 .product_line{
@@ -119,9 +116,15 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
     color: #42413e;
 }
 
+.product_card a:hover{
+    opacity: 0.75;
+    transition: opacity 1s;
+}
+
 .product_card img{
     max-width: 100%;
 }
+
 
 .product_card h3{
     letter-spacing: 8px;
@@ -251,6 +254,12 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
         letter-spacing: 0px;
         font-size: 11px;
         line-height: 24px;
+    }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 
 }

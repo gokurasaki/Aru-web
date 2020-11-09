@@ -36,7 +36,6 @@ header.header nav.nav_list ul.nav_left li:nth-child(2){
     letter-spacing: 8px;
     color: #42413e;
     font-weight: bold;
-
 }
 
 
@@ -65,7 +64,6 @@ ul.banner img{
 
 .earring_ITEMandTEXT{
     display: flex;
-
 }
 
 .img_block{
@@ -162,15 +160,20 @@ a.btn:hover{
 
 /*卡片圖片尺寸*/
 .card_img img{
-	width: 100%;
+    width: 100%;
+}
+
+.card_img:hover{
+    opacity: 0.75;
+    transition: all 1s ease-in-out;
 }
 
 /*卡片圖片敘述*/
 .card_img_title {
     text-decoration: none;
     cursor: pointer;
-
 }
+
 
 .card_img_title span{
     display: inline-block;
@@ -318,6 +321,12 @@ a.btn:hover{
     .card_img:last-child{
         margin-right: 0px;
     }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
 }
 
 
@@ -371,5 +380,11 @@ a.btn:hover{
 
     .card_img:last-child{
         margin-right: 0px;
+    }
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 }

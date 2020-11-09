@@ -14,10 +14,9 @@ main{
 
 .workshop_banner{
 	text-align: center;
-    width: calc(100% - 160px);
+    width: 100%;
     margin: 0 auto;
     /* border: 2px solid blue; */
-
 }
 
 .workshop_banner img{
@@ -33,9 +32,10 @@ main{
 .title{
 	font-family: 'Cormorant Unicase', serif;
 	color: #956134;
-    font-size: 7rem;
+    font-size: 6.5rem;
     letter-spacing: 20px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .title_chinese {
@@ -95,7 +95,6 @@ main{
 }
 
 .product_itemblock .product_card{
-    /* border: 1px solid blue; */
     margin: 15px 0;
     width: 32%;
 }
@@ -192,6 +191,8 @@ main{
         top: 20px;
     }
 
+
+
 }
 
 
@@ -228,6 +229,10 @@ main{
         top: 20px;
     }
 
+    .title{
+        margin-bottom: 30px;
+    }
+
 
 }
 
@@ -242,7 +247,7 @@ main{
     .container {
         margin: 0 auto;
         width: calc(100% - 20px);
-        margin-top: 180px;
+        margin-top: 150px;
     }
 
     .product_itemblock .product_card {
@@ -263,6 +268,11 @@ main{
         right: 10px;
         top: 20px;
     }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
 
 
 }

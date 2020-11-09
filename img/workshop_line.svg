@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="10" viewBox="0 0 77 10">
+  <defs>
+    <clipPath id="clip-Artboard_9">
+      <rect width="77" height="10"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_9" data-name="Artboard – 9" clip-path="url(#clip-Artboard_9)">
+    <g id="Group_43" data-name="Group 43" transform="translate(-249.436 -688.526)">
+      <g id="Group_42" data-name="Group 42" transform="translate(250.436 689.483)">
+        <path id="Path_117" data-name="Path 117" d="M323.924,689.483l-5.82,5.22c-1.28,1.148-5.453,1.148-6.733,0l-2.453-2.2c-1.28-1.148-5.453-1.148-6.733,0l-2.453,2.2c-1.28,1.148-5.453,1.148-6.733,0l-2.453-2.2c-1.28-1.148-5.453-1.148-6.733,0l-2.453,2.2c-1.28,1.148-5.453,1.148-6.733,0l-2.453-2.2c-1.28-1.148-5.453-1.148-6.733,0l-2.453,2.2c-1.28,1.148-5.453,1.148-6.733,0l-5.82-5.22" transform="translate(-250.436 -689.483)" fill="none" stroke="#956134" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_118" data-name="Path 118" d="M250.436,697.662l5.82-5.219c1.28-1.148,5.453-1.148,6.733,0l2.453,2.2c1.28,1.148,5.453,1.148,6.733,0l2.453-2.2c1.28-1.148,5.453-1.148,6.733,0l2.453,2.2c1.28,1.148,5.453,1.148,6.733,0l2.453-2.2c1.28-1.148,5.453-1.148,6.733,0l2.453,2.2c1.28,1.148,5.453,1.148,6.733,0l2.453-2.2c1.28-1.148,5.453-1.148,6.733,0l5.82,5.219" transform="translate(-250.436 -689.365)" fill="none" stroke="#956134" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="../css/workshop.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./css/slick-theme.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -70,6 +68,10 @@
 	<main>	
 		<div class="container">
 			<p class="title" data-aos="flip-up">workshop</p>
+
+			<div class="workshop_banner">
+				<img src="../img/workshop.gif" alt="">
+			</div>
 	
 			<div class="title_chinese">
 				<img src="../img/workshop_line.svg" alt="">
@@ -81,10 +83,6 @@
 
 			<div class="booking_btn">
 				<a href="./workshop_lesson.html">預約報名</a>
-			</div>
-
-			<div class="workshop_banner">
-				<img src="../img/workshop.gif" alt="">
 			</div>
 	
 			<div class="workshop_option">
@@ -100,7 +98,7 @@
 
 				<div class="product_card" data-aos="fade-down">
 
-					<a href="">     
+					<a href="./workshop_booking.html">     
 						<div class="card_img">
 							<img src="../img/workshop_option-1.jpg" alt="">
 						</div>
@@ -118,7 +116,7 @@
 
 				<div class="product_card" data-aos="fade-up">
 
-					<a href="">     
+					<a href="./workshop_booking.html">     
 						<div class="card_img">
 							<img src="../img/workshop_option-2.jpg" alt="">
 						</div>
@@ -136,7 +134,7 @@
 
 				<div class="product_card" data-aos="fade-down">
 
-					<a href="">     
+					<a href="./workshop_booking.html">     
 						<div class="card_img">
 							<img src="../img/workshop_option-3.jpg" alt="">
 						</div>
@@ -164,7 +162,7 @@
 
 			<p class="cc">© Arudeco Inc. All Rights Reserved.</p>
 
-			<img class="footer_logo" src="./img/footer_logo.svg" alt="">
+			<img class="footer_logo" src="../img/footer_logo.svg" alt="">
 
 			<div class="follow_us">
 
@@ -177,20 +175,11 @@
 
 	</footer>
 
-	<script src="./js/jquery-3.5.1.js"></script>
-	<script src="./js/slick.js"></script>
-
 	<script>
         AOS.init({
             duration: 1200,
         });
       </script>
-	
-    <script>
-        $('.banner_img').slick({
-            dots: true
-        });
-    </script>
 
 	<script>
         $(document).ready(function() {

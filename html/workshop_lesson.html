@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Arudeco: 有飾 / 讓生活多一點裝飾</title>
-	<link rel="stylesheet" href="../css/workshop_booking.css">
+	<link rel="stylesheet" href="../css/workshop_lesson.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500&display=swap" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./css/slick-theme.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -63,7 +61,7 @@
 
 	</header>
 
-	<a class="index_logo" href="../index.html"><img src="../img/logo.svg" alt=""></a>
+	<a class="index_logo" data-aos="flip-left" href="../index.html"><img src="../img/logo.svg" alt=""></a>
 
 	
 	<main>
@@ -76,7 +74,7 @@
 
 		<div class="workshop_item">
 
-            <div class="workshop_item_block">
+            <div class="workshop_item_block" data-aos="fade-up">
                 <a href="./workshop_booking.html">
                     <div class="workshop_item_img">
                         <img src="../img/workshop_item-1.jpg" alt="">
@@ -91,7 +89,7 @@
                 </a>
             </div>
             
-            <div class="workshop_item_block">
+            <div class="workshop_item_block" data-aos="fade-up">
                 <a href="./workshop_booking.html">
                     <div class="workshop_item_img">
                         <img src="../img/workshop_item-2.jpg" alt="">
@@ -106,7 +104,7 @@
                 </a>
             </div>
             
-            <div class="workshop_item_block">
+            <div class="workshop_item_block" data-aos="fade-up">
                 <a href="./workshop_booking.html">
                     <div class="workshop_item_img">
                         <img src="../img/workshop_item-3.jpg" alt="">
@@ -121,7 +119,7 @@
                 </a>
 			</div>
 
-			<div class="workshop_item_block">
+			<div class="workshop_item_block" data-aos="fade-up">
                 <a href="">
                     <div class="workshop_item_img">
                         <img src="../img/workshop_item-4.jpg" alt="">
@@ -146,7 +144,7 @@
 
 			<p class="cc">© Arudeco Inc. All Rights Reserved.</p>
 
-			<img class="footer_logo" src="./img/footer_logo.svg" alt="">
+			<img class="footer_logo" src="../img/footer_logo.svg" alt="">
 
 			<div class="follow_us">
 
@@ -159,21 +157,12 @@
 
 	</footer>
 
-	<script src="./js/jquery-3.5.1.js"></script>
-	<script src="./js/slick.js"></script>
-
 	<script>
         AOS.init({
             duration: 1200,
         });
       </script>
 	
-    <script>
-        $('.banner_img').slick({
-            dots: true
-        });
-    </script>
-
 	<script>
         $(document).ready(function() {
             $('.showmenu').on('click',  function(e){

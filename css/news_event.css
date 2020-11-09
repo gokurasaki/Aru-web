@@ -35,7 +35,7 @@ section.event_block .title_block{
 }
 
 .title_block h2{
-    letter-spacing: 12px;
+    letter-spacing: 5px;
 }
 
 
@@ -184,11 +184,6 @@ section.other_event h3{
         margin-top: 200px;
     }
 
-    .title_block h2{
-        letter-spacing: 5px;
-    }
-    
-
 }
 
 
@@ -218,6 +213,7 @@ section.other_event h3{
 
     p.news_event_content {
         margin-left: 30px;
+        margin-right: 30px;
     }
 
     .social_block{
@@ -279,6 +275,7 @@ section.other_event h3{
 
     p.news_event_content {
         margin-left: 30px;
+        margin-right: 30px;
     }
 
     .social_block{
