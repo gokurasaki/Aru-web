@@ -7,7 +7,7 @@ header.header nav.nav_list ul.nav_left li:nth-child(3){
 
 
 main{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-top: 200px;
 
 }
@@ -87,18 +87,17 @@ main{
 
 /* 精選飾品卡片區--------------------------------- */
 .product_itemblock{
-    border: 1px solid red;
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 95%;
 }
 
 .product_itemblock .product_card{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 15px 0;
-    margin-right: 50px;
+    width: 32%;
 }
 
 .product_itemblock .product_card_img img{
@@ -134,6 +133,8 @@ main{
     opacity: 0.8;
     transition: opacity 1s;
 }
+
+
 
 .product_card_description{
     text-align: center;
@@ -179,6 +180,8 @@ main{
 
 @media (min-width: 768px) and (max-width: 1199px){
 
+    
+
     .container {
         margin: 0 auto;
         width: calc(100% - 80px);
@@ -188,7 +191,13 @@ main{
 }
 
 
-@media (max-width: 767px){
+@media (min-width: 480px) and (max-width: 767px){
+
+
+    .title{
+        font-size: 4rem;
+        letter-spacing: 10px;
+    }
 
     .container {
         margin: 0 auto;
@@ -196,8 +205,52 @@ main{
         margin-top: 180px;
     }
 
+    .product_itemblock .product_card {
+        margin: 15px 0;
+        width: 60%;
+    }
+
+    .product_itemblock {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
 
 }
+
+
+@media (max-width: 479px){
+
+    .title{
+        font-size: 48px;
+        letter-spacing: 5px;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: calc(100% - 20px);
+        margin-top: 180px;
+    }
+
+    .product_itemblock .product_card {
+        margin: 15px 0;
+        width: 60%;
+    }
+
+    .product_itemblock {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+
+}
+
 
 
 
