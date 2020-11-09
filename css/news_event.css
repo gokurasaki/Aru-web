@@ -1,0 +1,316 @@
+@import "./header.css";
+@import "./footer.css";
+
+header.header nav.nav_list ul.nav_left li:first-child{
+    border-bottom: 2px solid #AE8663;
+}
+
+
+main{
+	margin: 0 auto;
+    width: calc(100% - 160px);
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+
+/* 主文章區 */
+section.event_block{
+    /* border: 1px solid red; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.event_block img{
+    width: 100%;
+    margin: 15px 0 20px 0;
+}
+
+section.event_block .title_block{
+    color: #956134;
+}
+
+.title_block h2{
+    letter-spacing: 12px;
+}
+
+
+.title_block p{
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-family: 微軟正黑體;
+    color: #AE8663;
+    margin: 5px 0 5px 0;
+}
+
+p.news_event_content{
+    color: #956134;
+    letter-spacing: 1px;
+    font-family: 微軟正黑體;
+    line-height: 28px;
+}
+
+.social_block{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_block h4{
+    color: #956134;
+    letter-spacing: 5px;
+
+}
+
+.social_icon{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.social_icon img{
+    border: 1px solid #AE8663;
+    width: 50px;
+    height: 50px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.social_icon img:hover{
+    opacity: 0.7;
+
+}
+
+
+
+
+
+
+/* 其他文章區 */
+section.other_event{
+    /* border: 1px solid red; */
+    text-align: right;
+    width: 30%;
+    padding: 5px;
+}
+
+section.other_event h3{
+    color: #956134;
+    letter-spacing: 15px;
+    margin: 25px 0 25px 0;
+
+}
+
+
+/* 最新消息卡片區域 */
+.news_card_block{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.news_card_block .card{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+
+
+.news_card_block .card a{
+    text-decoration: none;
+    color: #956134;
+}
+
+.news_card_block .card .card_img{
+    /* border: 1px solid blue; */
+    overflow: hidden;
+} 
+
+.news_card_block .card .card_img img{
+    overflow: hidden;
+    max-width: 100%;
+    transform:scale(1,1);
+    transition: all 1s ease-in-out;
+}
+
+.news_card_block .card .card_img img:hover{
+    transform:scale(1.2,1.2);
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.news_card_block .card p.card_title{
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 8px 0 0;
+    font-size: 18px;
+
+    /* 文字超出範圍 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.news_card_block .card p.date{
+    letter-spacing: 3px;
+    padding-top: 10px;
+    font-family: 微軟正黑體;
+    color: #AE8663;
+
+}
+
+.news_card_block .card p.option{
+    letter-spacing: 3px;
+    font-family: 微軟正黑體;
+    color: #AE8663;
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 810px){
+
+    main{
+        width: calc(100% - 60px);
+        margin-top: 200px;
+    }
+
+    .title_block h2{
+        letter-spacing: 5px;
+    }
+    
+
+}
+
+
+@media (min-width: 550px) and (max-width: 767px){
+
+    .index_logo{
+        display: none;
+    }
+
+    main{
+        width: calc(100% - 20px);
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_block h2{
+        letter-spacing: 5px;
+    }
+
+    section.event_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    p.news_event_content {
+        margin-left: 30px;
+    }
+
+    .social_block{
+        margin-left: 30px;
+    }
+
+    /* 最新消息卡片區域 */
+
+    section.other_event{
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 70%;
+        padding: 5px;
+    }
+
+    .news_card_block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+} 
+
+
+@media (min-width: 320px) and (max-width: 549px){
+    .index_logo{
+        display: none;
+    }
+
+    main{
+        width: calc(100% - 20px);
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_block h2{
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .title_block p {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    section.event_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    p.news_event_content {
+        margin-left: 30px;
+    }
+
+    .social_block{
+        margin-left: 30px;
+    }
+
+    /* 最新消息卡片區域 */
+
+    section.other_event{
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 70%;
+        padding: 5px;
+    }
+
+    .news_card_block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    nav.nav_list ul.nav_right li a.header_ig_logo{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+
+} 
+
+
+
+
+
+
